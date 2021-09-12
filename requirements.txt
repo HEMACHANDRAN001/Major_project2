@@ -1,4 +1,3 @@
-Client
 Updater
 MessageHandler
 Filters
