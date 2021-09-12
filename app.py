@@ -1,7 +1,5 @@
-!pip install adafruit-io --quiet
-!pip install python-telegram-bot==13.0 --quiet
 from Adafruit_IO import Client
-aio = Client('HEMACHANDRAN_V','aio_lmzW66bkM1gajcdYHSxFnWWxIMNK')
+aio = Client('HEMACHANDRAN_V','aio_EbGb12hidxLeLjTprB03NdrGIXG9')
 from telegram.ext import Updater, MessageHandler, Filters
 
 def demo1(bot,update):
@@ -41,5 +39,3 @@ dp = u.dispatcher
 dp.add_handler(MessageHandler(Filters.text,main))
 u.start_polling()
 u.idle()
-  
- 
