@@ -1,5 +1,3 @@
-!pip install adafruit-io
-!pip install python-telegram-bot==13.0 
 from Adafruit_IO import Client
 aio = Client('HEMACHANDRAN_V','aio_uLLD45DwSnHb6lBVCiJ0wklvvJYR')
 from telegram.ext import Updater, MessageHandler, Filters
