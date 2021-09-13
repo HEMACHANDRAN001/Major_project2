@@ -1,5 +1,10 @@
 from Adafruit_IO import Client
-aio = Client('HEMACHANDRAN_V','aio_uLLD45DwSnHb6lBVCiJ0wklvvJYR')
+import os
+
+username_1 = os.getenv('Username')
+key_1 =os.getenv('Key')
+
+aio = Client(username_1,key_1)
 from telegram.ext import Updater, MessageHandler, Filters
 
 def demo1(bot,update):
